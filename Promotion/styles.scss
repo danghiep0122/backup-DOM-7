@@ -1,0 +1,96 @@
+.all-products-wrap {
+    width: 100%
+}
+
+.all-promotions-title {
+    padding: 10px;
+    font-size: .7rem;
+}
+
+.promotions-tab {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(0 0 0 /10%);
+}
+
+.promotion-title {
+    font-size: 1rem;
+    padding: 8px 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.promotion-title a {
+    text-decoration: none;
+    color: #0078ae;
+    
+    &:hover {
+        color: #005e88;
+    }
+}
+
+.promotion-title.active {
+    color: #e31837;
+    border-bottom: 3px solid #e31837;
+}
+
+.see-more-btn-wrapper  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 20px;
+}
+
+.see-more-btn {
+    background-color: #0078ae;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+    letter-spacing: 1px;
+
+    &:hover {
+        background-color: #005e88;
+    }
+}
+
+// Tablet and PC Responsive
+@media screen and (min-width: 576px) {
+    .all-promotions-title {
+        display: flex;
+        align-items: flex-end;
+        border-bottom: 1px solid rgba(0 0 0 /10%);
+        padding-bottom: 0;
+        margin: 8px;
+    }
+
+    .promotions-tab {
+        border-bottom: none;
+    }
+
+    .promotion-title {
+        margin:0 20px
+    }
+}
+
+// Tablet and PC Responsive
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .promotions-tab {
+        margin-left: 80px;
+    }
+
+    .promotion-title {
+        margin:0 50px
+    }
+}
+
+// Big Screen Responsive
+@media screen and (min-width: 1024px) {
+    .all-products-wrap {
+        max-width: 1023px;
+    }
+}
